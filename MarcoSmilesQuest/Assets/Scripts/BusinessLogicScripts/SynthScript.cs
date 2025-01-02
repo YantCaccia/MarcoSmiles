@@ -8,6 +8,7 @@ public class SynthScript : MonoBehaviour
 
     [SerializeField]
     private ToneSynth _synth;
+    private Note _playing;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +24,15 @@ public class SynthScript : MonoBehaviour
 
     public void PlayNote(Note toPlay)
     {
-        if (!toPlay.Equals(Note.GetPause()))
+        if(toPlay.Equals(Note.GetPause()))
         {
+            _synth.TriggerReleaseAll(immediate: true);
+        }
+        if (!toPlay.Equals(Note.GetPause()))
+        {   
             _synth.TriggerAttackAndRelease(ToneNote.Parse(
                 toPlay.ToStringInternational()
-            ), duration: 1.5f);
+            ), duration: 2.0f);
         }
     }
 
