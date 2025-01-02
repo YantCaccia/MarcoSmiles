@@ -26015,7 +26015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed4235ff04404891bf6bee7a7a900b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serverUrl: http://172.20.10.2:5005
+  _serverUrl: http://191.168.214.250:5005
 --- !u!4 &1838626416
 Transform:
   m_ObjectHideFlags: 0

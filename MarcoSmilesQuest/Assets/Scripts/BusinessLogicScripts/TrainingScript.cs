@@ -18,7 +18,7 @@ public class TrainingScript : MonoBehaviour
 
     private Note _noteToPlay;
     private int _cycles = 0;
-    private float _poseTime = 5f;
+    private float _poseTime = 7f;
     private const float _fedbackTime = 1.5f;
 
     // Start is called before the first frame update
